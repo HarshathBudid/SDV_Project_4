@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Webpage</title>
+    <style>
+        /* CSS for styling */
+        body {
+            background-image: url('file:///C:/Users/shrav/Desktop/ppp.jpeg'); /* Replace the URL with the path to your image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333; /* Dark gray color for text */
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff; /* Blue color for title */
+            cursor: pointer; /* Change cursor to pointer to indicate clickable */
+        }
+        p {
+            margin-bottom: 20px; /* Add some space between paragraphs */
+        }
+        .hidden {
+            display: none; /* Hide the graph and information by default */
+        }
+        img {
+            display: none; /* Hide the image by default */
+            max-width: 100%; /* Ensure image does not exceed viewport width */
+            margin-top: 20px; /* Add some space above the image */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 onclick="toggleContent('happiness')">World Happiness Measurement</h1>
+        <div class="hidden" id="happiness">
+            <p>Happiness measurement is a quantitative approach to assessing the subjective well-being of individuals and societies. It involves various factors such as income, social support, health, freedom, and trust in government. By analyzing these factors, researchers aim to understand and improve the overall happiness and quality of life of people around the world.</p>
+            <p>The World Happiness Report, published annually by the United Nations, ranks countries based on their happiness scores derived from surveys and statistical data. This report sheds light on the factors influencing happiness levels globally and provides insights for policymakers to prioritize actions that promote well-being and happiness among their populations.</p>
+            <p>The report also includes analysis on specific aspects such as economic prosperity, social support, life expectancy, freedom to make life choices, generosity, and perceptions of corruption. By examining these factors, countries can identify areas for improvement and implement policies to enhance the well-being of their citizens.</p>
+        </div>
+    </div>
+
+    <div>
+        <h1 onclick="toggleContent('aqi_co')">AQI vs CO</h1>
+        <div class="hidden" id="aqi_co">
+            <p>Generally, when examining the relationship between the Air Quality Index (AQI) and carbon monoxide (CO) levels, CO is a common air pollutant that can have a significant impact on air quality and human health. Carbon monoxide is primarily emitted from the incomplete combustion of fossil fuels, such as vehicle emissions and industrial processes. Elevated CO levels in the air can lead to health issues, particularly affecting the cardiovascular and respiratory systems. By comparing CO levels with AQI values, which provide a standardized measure of overall air quality, one can gain insights into the extent of air pollution and the potential health risks associated with increased CO concentrations. Monitoring and managing CO emissions and air quality is crucial for promoting cleaner and healthier environments, implementing pollution control measures, and raising public awareness about the potential health impacts of elevated CO levels.</p>
+            <p>For more information, you can visit the <a href="https://vizhub.com/DivyaSreeDandu/e22e7a2ffa584b7885cb6a8804b13b65?edit=files">link</a>.</p>
+            <!-- Include your graph here -->
+            <div id="graph_aqi_co">
+                <!-- Add your graph code here -->
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 onclick="toggleContent('aqi_no')">AQI vs NO</h1>
+        <div class="hidden" id="aqi_no">
+            <p>The AQI (Air Quality Index) is a metric used to assess the level of air pollution and its potential impact on human health. In the given file, there is data comparing AQI values with NO (nitric oxide) levels. NO is a common air pollutant primarily emitted from vehicle exhaust, power plants, and industrial processes. The data in the file likely includes measurements of NO concentration in the air along with corresponding AQI values. By examining the relationship between NO levels and AQI values, one can gain insights into the air quality conditions and the potential health risks associated with elevated NO concentrations. This information can be used to monitor and manage air pollution, implement mitigation strategies, and raise public awareness about the environmental and health implications of NO emissions.</p>
+            <p>For more information, you can visit the <a href="https://vizhub.com/DivyaSreeDandu/52b43f7e1f2148838f6bcab2513f6352?edit=files&file=script.js">link</a>.</p>
+            <!-- Include your graph here -->
+            <div id="graph_aqi_no">
+                <!-- Add your graph code here -->
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 onclick="toggleContent('aqi_pm25')">AQI vs PM2.5</h1>
+        <div class="hidden" id="aqi_pm25">
+            <p>When examining the relationship between the Air Quality Index (AQI) and PM2.5 (particulate matter 2.5 micrometers or smaller) values, PM2.5 is a significant air pollutant that poses risks to human health. PM2.5 refers to fine particles suspended in the air, which can originate from various sources such as combustion processes, industrial emissions, and vehicle exhaust. These tiny particles can easily penetrate deep into the respiratory system, leading to adverse health effects. Prolonged exposure to high levels of PM2.5 has been linked to respiratory problems, cardiovascular issues, and increased mortality rates. By comparing PM2.5 levels with AQI values, which provide a standardized measure of overall air quality, insights can be gained into the extent of particulate pollution and the associated health risks. Monitoring and managing PM2.5 concentrations are crucial for assessing air quality, implementing effective pollution control measures, and raising public awareness about the importance of reducing exposure to fine particulate matter for the well-being of individuals and communities.</p>
+            <p>For more information, you can visit the <a href="https://vizhub.com/DivyaSreeDandu/e4943654958243c48cece30dcc73cc92?edit=files&file=script.js">link</a>.</p>
+            <!-- Include your graph here -->
+            <div id="graph_aqi_pm25">
+                <!-- Add your graph code here -->
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 onclick="toggleContent('aqi_ozone')">AQI vs Ozone</h1>
+        <div class="hidden" id="aqi_ozone">
+            <p>When considering the relationship between the Air Quality Index (AQI) and ozone (O3) levels, ozone is a reactive gas that plays a significant role in atmospheric chemistry and air pollution. Ozone is formed when pollutants such as nitrogen oxides (NOx) and volatile organic compounds (VOCs) react in the presence of sunlight. High concentrations of ozone can occur in areas with intense sunlight and significant emissions of NOx and VOCs. Elevated ozone levels can have adverse effects on human health, particularly on the respiratory system. Exposure to high ozone levels can lead to respiratory symptoms, aggravate existing respiratory conditions, and increase the risk of respiratory-related illnesses. By examining the relationship between ozone levels and AQI values, which provide a standardized measure of air quality, insights can be gained into the extent of ozone pollution and the potential health risks associated with increased ozone concentrations. Monitoring and managing ozone levels in the atmosphere are crucial for understanding air pollution patterns, implementing pollution control strategies, and promoting public awareness of the health implications of elevated ozone levels.</p>
+            <p>For more information, you can visit the <a href="https://vizhub.com/DivyaSreeDandu/5ac66b2f3c884e32aba17fe5403f0cd8?edit=files&file=script.js">link</a>.</p>
+            <!-- Include your graph here -->
+            <div id="graph_aqi_ozone">
+                <!-- Add your graph code here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to toggle the display of the content
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
